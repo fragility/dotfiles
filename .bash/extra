@@ -6,3 +6,7 @@ git config --global user.name "$GIT_AUTHOR_NAME"
 GIT_AUTHOR_EMAIL="pete@mdsc.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
+
+
+# Enable rbenv completion, etc.
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
