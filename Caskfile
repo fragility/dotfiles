@@ -16,7 +16,7 @@ cask install font-source-code-pro 2> /dev/null
 cask install garmin-express 2> /dev/null
 cask install geekbench 2> /dev/null
 cask install gitx-rowanj 2> /dev/null
-cask install google-chrome 2> /dev/null
+#cask install google-chrome 2> /dev/null
 cask install minecraft 2> /dev/null
 cask install openoffice 2> /dev/null
 cask install pgadmin3 2> /dev/null
