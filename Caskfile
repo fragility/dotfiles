@@ -21,6 +21,7 @@ cask install gpgtools 2> /dev/null
 cask install minecraft 2> /dev/null
 cask install openoffice 2> /dev/null
 cask install pgadmin3 2> /dev/null
+cask install seafile-client 2> /dev/null
 cask install skype 2> /dev/null
 cask install spotify 2> /dev/null
 cask install sublime-text3 2> /dev/null
