@@ -10,6 +10,9 @@ upgrade
 # Install wget with IRI support
 install wget --enable-iri
 
+# Install more recent versions of some OS X tools
+install vim --override-system-vi
+
 # Install Bash 4
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
 install bash
