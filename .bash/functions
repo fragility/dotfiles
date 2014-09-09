@@ -76,6 +76,9 @@ if [ $? -eq 0 ]; then
 	}
 fi;
 
+# Create .gitignore files (from gitignore.io)
+function gi() { curl -s https://www.gitignore.io/api/$@ ;}
+
 # Create a data URL from a file
 function dataurl() {
 	local mimeType=$(file -b --mime-type "$1");
