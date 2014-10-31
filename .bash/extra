@@ -13,3 +13,5 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Initialize KVM
 source /usr/local/bin/kvm.sh
+
+VAGRANT_DEFAULT_PROVIDER=parallels
