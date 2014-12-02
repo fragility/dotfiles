@@ -10,12 +10,10 @@ cask install chicken 2> /dev/null
 cask install diffmerge 2> /dev/null
 cask install dropbox 2> /dev/null
 cask install evernote 2> /dev/null
-cask install firefox 2> /dev/null
+#cask install firefox 2> /dev/null
 cask install font-inconsolata 2> /dev/null
 cask install font-source-code-pro 2> /dev/null
 cask install garmin-express 2> /dev/null
-cask install geekbench 2> /dev/null
-cask install gitx-rowanj 2> /dev/null
 #cask install google-chrome 2> /dev/null
 cask install gpgtools 2> /dev/null
 cask install minecraft 2> /dev/null
@@ -23,8 +21,10 @@ cask install openoffice 2> /dev/null
 cask install pgadmin3 2> /dev/null
 cask install seafile-client 2> /dev/null
 cask install skype 2> /dev/null
+cask install sourcetree 2> /dev/null
 cask install spotify 2> /dev/null
 cask install sublime-text3 2> /dev/null
 cask install transmission 2> /dev/null
+cask install vagrant 2> /dev/null
 cask install virtualbox 2> /dev/null
 cask install ynab 2> /dev/null
