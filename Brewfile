@@ -36,8 +36,8 @@ install rbenv-default-gems
 install rbenv-gem-rehash
 install rbenv-vars
 
-# Install K Runtime
-install aspnet/k/kvm
+# Install .NET Runtime
+install aspnet/k/dnvm
 
 # Install VM and provisioning tools
 install homebrew/binary/packer
