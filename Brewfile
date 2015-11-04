@@ -1,54 +1,78 @@
 # Install command-line tools using Homebrew
 # Usage: `brew bundle Brewfile`
 
-# Make sure we’re using the latest Homebrew
-update
-
-# Upgrade any already-installed formulae
-upgrade
+tap 'caskroom/cask'
+tap 'caskroom/fonts'
+tap 'aspnet/dnx'
+tap 'homebrew/php'
 
 # Install wget with IRI support
-install wget --enable-iri
+brew 'wget', args: ['--enable-iri']
 
 # Install more recent versions of some OS X tools
-install vim --override-system-vi
+brew 'vim', args: ['--override-system-vi']
 
 # Install Bash 4
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
-install bash
-install bash-completion
+brew 'bash'
+brew 'bash-completion'
 
 # Install Database servers
-install postgresql
-install postgis
+brew 'postgresql'
+brew 'postgis'
 
 # Install PHP environment
-install tidy
-install homebrew/php/php55 --with-pgsql --with-tidy
-install composer
-install php-code-sniffer
+brew 'php55', args: ['--with-pgsql']
+brew 'composer'
+brew 'php-code-sniffer'
 
 # Install Ruby environment
-install rbenv
-install ruby-build
-install rbenv-binstubs
-install rbenv-default-gems
-install rbenv-gem-rehash
-install rbenv-vars
+brew 'rbenv'
+brew 'ruby-build'
+brew 'rbenv-binstubs'
+brew 'rbenv-default-gems'
+brew 'rbenv-gem-rehash'
+brew 'rbenv-vars'
 
-# Install .NET Runtime
-install aspnet/k/dnvm
+# Install .Net environment
+brew 'dnvm'
 
 # Install VM and provisioning tools
-install homebrew/binary/packer
-install ansible
+brew 'ansible'
 
 # Install other useful binaries
-install git
-install imagemagick --with-webp
-install node
-install pngcrush
-install ssh-copy-id
+brew 'git'
+brew 'imagemagick', args: ['--with-webp']
+brew 'node'
+brew 'pngcrush'
+brew 'ssh-copy-id'
 
-# Remove outdated versions from the cellar
-cleanup
+# Development Tools
+cask 'atom'
+cask 'diffmerge'
+cask 'java'
+cask 'pgadmin3'
+cask 'sourcetree'
+cask 'sublime-text3'
+cask 'vagrant'
+cask 'virtualbox'
+
+# Other Productivity Tools
+# cask 'chicken'
+cask 'dropbox'
+cask 'evernote'
+#cask 'firefox'
+cask 'garmin-express'
+# #cask 'google-chrome'
+cask 'gpgtools'
+cask 'minecraft'
+cask 'openoffice'
+# cask 'seafile-client'
+cask 'skype'
+cask 'spotify'
+cask 'transmission'
+cask 'ynab'
+
+# Nice fonts
+cask 'font-inconsolata'
+cask 'font-source-code-pro'
