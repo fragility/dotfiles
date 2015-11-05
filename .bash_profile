@@ -2,8 +2,8 @@
 export PATH="$HOME/bin:$PATH";
 
 # Load the shell dotfiles, and then some:
-# * ~/.path can be used to extend `$PATH`.
-# * ~/.extra can be used for other settings you don’t want to commit.
+# * ~/.bash/path can be used to extend `$PATH`.
+# * ~/.bash/extra can be used for other settings you don’t want to commit.
 for file in ~/.bash/{path,prompt,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
