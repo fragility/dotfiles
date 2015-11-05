@@ -1,18 +1,7 @@
 " Use the Solarized Dark theme
 set background=dark
 colorscheme solarized
-
-if !has('gui_running')
-    " Compatibility for Terminal
-    let g:solarized_termtrans=1
-
-    if (&t_Co >= 256 || $TERM == 'xterm-256color')
-        " Do nothing, it handles itself.
-    else
-        " Make Solarized use 16 colors for Terminal support
-        let g:solarized_termcolors=16
-    endif
-endif
+let g:solarized_termtrans=1
 
 " Make Vim more useful
 set nocompatible
@@ -87,10 +76,10 @@ set title
 " Show the (partial) command as it’s being typed
 set showcmd
 " Use relative line numbers
-" if exists("&relativenumber")
-" 	set relativenumber
-" 	au BufReadPost * set relativenumber
-" endif
+if exists("&relativenumber")
+	set relativenumber
+	au BufReadPost * set relativenumber
+endif
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
 
@@ -112,4 +101,6 @@ if has("autocmd")
 	filetype on
 	" Treat .json files as .js
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+	" Treat .md files as Markdown
+	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
