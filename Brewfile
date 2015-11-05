@@ -29,7 +29,6 @@ brew 'php-code-sniffer'
 # Install Ruby environment
 brew 'rbenv'
 brew 'ruby-build'
-brew 'rbenv-binstubs'
 brew 'rbenv-default-gems'
 brew 'rbenv-gem-rehash'
 brew 'rbenv-vars'
