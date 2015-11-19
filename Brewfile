@@ -5,6 +5,7 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'aspnet/dnx'
 tap 'homebrew/php'
+tap 'homebrew/services'
 
 # Install wget with IRI support
 brew 'wget', args: ['--enable-iri']
