@@ -34,9 +34,6 @@ brew 'rbenv-default-gems'
 brew 'rbenv-gem-rehash'
 brew 'rbenv-vars'
 
-# Install .Net environment
-brew 'dnvm'
-
 # Install VM and provisioning tools
 brew 'ansible'
 
